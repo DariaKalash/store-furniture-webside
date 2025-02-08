@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: Regular;
+    src: url(/src/fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: #F0F0F0;
+    font-family: 'Montserrat';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin-bottom: 200px;
+}
+
+span {
+    color: #8C6D51;
+}
+
+a {
+    text-decoration: none;
+    color: #22333B;
+    font-size: 24px;
+}
+
+.header {
+    border-bottom: thin solid #22333B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 15px 50px;
+}
+
+.menuHeaderCenter ul{
+    display: flex;
+    list-style: none;
+}
+
+.menuHeaderCenter li {
+    margin-right: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.menuHeaderRigth {
+    border: thin solid #22333B;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 5px 50px 5px 50px;
+}
+
+p {
+    font-size: 24px;
+    color: #22333B;
+}
+
+h1 {
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #22333B;
+}
+
+h2 {
+    text-align: center;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #22333B;
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #8C6D51;
+}
+
+.mainBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 0px 50px;
+    gap: 20px;
+}
+
+.mainBlockText {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 120px;
+    padding-top: 60px;
+}
+
+.mainBlockImages {
+    /* display: flex;
+    gap: 20px; */
+    position: relative;
+    width: 474px;
+    height: 948px;
+}
+
+.mainBlockImage2 {
+    position: relative;
+    z-index: 1;
+}
+
+.mainBlockImage1 {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.aboutBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-items: stretch;
+    position: relative;
+}
+
+.aboutBlock > div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.aboutBlock > div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.aboutBlock > div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    position: relative;
+    margin-top: -120px;
+    z-index: 2;
+}
+
+.aboutBlock > div:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    margin-top: -120px;
+    z-index: 2;
+}
+
+.aboutBlock img {
+    width: 100%;
+    max-width: 474px;
+    height: auto;
+}
+
+.aboutBlockText {
+    max-width: 500px;
+}
+
+.aboutBlockTextComand {
+    padding-bottom: 20px;
+}
+
+.seasonBlock {
+    display: grid;
+    grid-template-columns: 474px 640px 474px;
+    padding: 0px 100px 0px 100px;
+    gap: 20px;
+}
+
+.seasonBlockColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.left {
+    max-width: 310px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.center {
+    max-width: 640px;
+    align-items: center;
+    text-align: right;
+}
+
+.right {
+    max-width: 474px;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.seasonBlockImages {
+    margin-bottom: 20px;
+}
+
+.seasonBlockText1 {
+    width: 474px;
+    margin-top: 130px;
+}
+
+.seasonBlockText2 {
+    width: 474px;
+    margin-bottom: 257px;
+}
+
+.katalogButton {
+    border: medium solid #8C6D51;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 5px 50px 5px 50px;
+    color: #8C6D51;
+}
+
+.nameFurniture {
+    font-size: 32px;
+    color: #8C6D51;
+    margin-bottom: 10px;
+}
+
+.photoQuestions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.answersQuestions {
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.questions {
+    font-size: 24px;
+    color: #22333B;
+}
+
+.answers {
+    font-size: 24px;
+    color: #8C6D51;
+}
+
+hr {
+    height: 1px;
+    background: #22333B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: thin solid #22333B;
+    padding: 20px 50px 50px 50px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footerTop img {
+    display: block;
+}
+
+.footerTop nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footerTop nav ul li {
+    display: inline;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footerBottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerBottom ul li {
+    margin-bottom: 10px;
+}
+

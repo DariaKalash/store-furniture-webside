@@ -3,160 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
     <title>RAFFINÉ</title>
 </head>
+
+<!-- Шапка страницы-->
 <body>
-    <header>
+    <header class="header">
         <nav>
+            <img
+            src="src/icons/logoRaffine.svg"
+            alt="Лого"
+            width="108" height="39"
+            />
+        </nav>
+        <nav class="menuHeaderCenter">
             <ul>
                 <li><a href="#about">О нас</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="#contacts">Контакты</a></li>
-                <li><a href="tel:+79999999999">Связаться</a></li>
             </ul>
+        </nav>
+        <nav class="menuHeaderRigth">
+            <a href="tel:+79999999999">Связаться</a>
         </nav>
     </header>
 
-    
-    <h1>ДИЗАЙНЕРСКАЯ МЕБЕЛЬ RAFFINÉ</h1>
-    <img
-        src="src/img/главная1.svg"
-        alt="Красивая мебель"
-        width="310" height="620"
-    />
-    <img
-        src="src/img/главная2.svg"
-        alt="Красивая мебель"
-        width="474" height="948"
-    />
-    <p>Откройте для себя мир дизайнерской мебели, которая будет 
-        не просто предметом, а частью вашей истории</p>
-    <p>Создайте пространство мечты с Raffiné — здесь начинается 
-        стиль и комфорт!</p>
-    <a href="katalog.html">Перейти в каталог</a>
+
+    <main>
+        <!--Главный блок-->
+        <section class="mainBlock">
+            <div>
+                <div>
+                    <h1>ДИЗАЙНЕРСКАЯ МЕБЕЛЬ <span>RAFFINÉ</span></h1>
+                </div>
+                <div class="mainBlockText">
+                    <p>Откройте для себя мир дизайнерской мебели, которая будет 
+                        не просто предметом, а частью вашей истории</p>
+                    <p>Создайте пространство мечты с Raffiné — здесь начинается 
+                        стиль и комфорт!</p>
+                </div>
+                <div>
+                    <a href="katalog.html" class="katalogButton">Перейти в каталог</a>
+                </div>
+            </div>
+            <div class="mainBlockImages">
+                <img class="mainBlockImage1" src="src/img/главная1.svg" alt="Красивая мебель" width="310" height="620"/>
+                <img class="mainBlockImage2" src="src/img/главная2.svg" alt="Красивая мебель" width="474" height="948"/>
+            </div>
+        </section>
 
 
-    <h2 id="about">О НАС</h2>
-    <img
-        src="src/img/онас1.svg"
-        alt="Красивая мебель"
-        width="474" height="474"
-    />
-    <p>Raffiné — это французское слово, которое переводится 
-        как «изысканный», «утончённый», «очищенный». </p>
-    <p>Мы — команда профессиональных дизайнеров и мастеров, 
-        создающая уникальную, стильную и функциональную мебель 
-        для тех, кто ценит качество и индивидуальность. </p>
-    <p>Наша миссия — приносить в дома и офисы наших клиентов 
-        мебель, которая не только выполняет свои функции, 
-        но и вдохновляет, создает атмосферу и подчеркивает 
-        уникальность пространства.</p>
-    <img
-        src="src/img/онас2.svg"
-        alt="Красивая мебель"
-        width="474" height="474"
-    />
+        <!--Блок о нас-->
+        <section >
+            <h2 id="about">О НАС</h2>
+            <div class="aboutBlock">
+                <div>
+                    <img src="src/img/онас1.svg" alt="Красивая мебель" width="474" height="474"/>
+                </div>
+                <div class="aboutBlockText">
+                    <p><span>Raffiné</span> — это французское слово, которое переводится 
+                        как «изысканный», «утончённый», «очищенный». </p>
+                </div>
+                <div class="aboutBlockText">
+                    <p class="aboutBlockTextComand"><span>Мы — команда</span> профессиональных дизайнеров и мастеров, 
+                        создающая уникальную, стильную и функциональную мебель 
+                        для тех, кто ценит качество и индивидуальность. </p>
+                    <p><span>Наша миссия</span> — приносить в дома и офисы наших клиентов 
+                        мебель, которая не только выполняет свои функции, 
+                        но и вдохновляет, создает атмосферу и подчеркивает 
+                        уникальность пространства.</p>
+                </div>
+                <div>
+                    <img src="src/img/онас2.svg" alt="Красивая мебель" width="474" height="474"/>
+                </div>
+            </div>
+        </section>
 
 
-    <h2 id="season">ЗИМА 2025</h2>
-    <img
-        src="src/img/зима20251.svg"
-        alt="Красивая мебель"
-        width="310" height="310"
-    />
-    <img
-        src="src/img/зима20252.svg"
-        alt="Красивая мебель"
-        width="640" height="640"
-    />
-    <p>Изготовленны из высококачественного дерева, 
-        они отличаются продуманным дизайном, который сочетает в себе элегантность и прочность. </p>
-    <p>Balen-Laren</p>
-    <p>12 000₽</p>
-    <p>Каждая полка уникальна, благодаря натуральным текстурам древесины 
-        и мастерской обработке, что делает её не просто элементом хранения, но и выразительным акцентом 
-        в интерьере.</p>
-    <a href="katalog.html">Перейти в каталог</a>
-    <img
-        src="src/img/зима20253.svg"
-        alt="Красивая мебель"
-        width="474" height="310"
-    />
+        <!--Блок с сезоном-->
+        <section>
+            <h2 id="season">ЗИМА 2025</h2>
+            <div class="seasonBlock">
+                <div class="seasonBlockColomn left">
+                    <img class="seasonBlockImages" src="src/img/зима20251.svg" alt="Красивая мебель" width="310" height="310"/>
+                    <p class="nameFurniture">Balen-Laren</p>
+                    <p>12 000₽</p>
+                    <p class="seasonBlockText1">Каждая полка уникальна, благодаря натуральным текстурам древесины 
+                        и мастерской обработке, что делает её не просто элементом хранения, но и выразительным акцентом 
+                        в интерьере.</p>
+                </div>
+                <div class="seasonBlockColomn center">
+                    <img class="seasonBlockImages" src="src/img/зима20252.svg" alt="Красивая мебель" width="640" height="640"/>
+                    <a href="katalog.html" class="katalogButton">Перейти в каталог</a>
+                </div>
+                <div class="seasonBlockColomn right">
+                    <p class="seasonBlockText2">Изготовленны из высококачественного дерева, 
+                        они отличаются продуманным дизайном, который сочетает в себе элегантность и прочность. </p>
+                    <img src="src/img/зима20253.svg" alt="Красивая мебель" width="474" height="310"/>
+                </div>
+            </div>
+        </section>
 
 
-    <h2 id="questions">ПОПУЛЯРНЫЕ ВОПРОСЫ</h2>
-    <img
-        src="src/img/вопросы1.svg"
-        alt="Красивая мебель"
-        width="474" height="309"
-    />
-    <img
-        src="src/img/вопросы2.svg"
-        alt="Красивая мебель"
-        width="310" height="309"
-    />
-    <img
-        src="src/img/вопросы3.png"
-        alt="Красивая мебель"
-        width="474" height="309"
-    />
-    <details>
-        <summary>Тут попозже будут раскрывающиеся ответы на вопросы</summary>
-        <p>Пока оставлю так</p>
-    </details>
+        <!--Блок с ответами на вопросы-->
+        <section>
+            <h2 id="questions">ПОПУЛЯРНЫЕ ВОПРОСЫ</h2>
+            <div class="photoQuestions">  
+                <img
+                    src="src/img/вопросы1.svg"
+                    alt="Красивая мебель"
+                    width="474" height="309"
+                />
+                <img
+                    src="src/img/вопросы2.svg"
+                    alt="Красивая мебель"
+                    width="310" height="309"
+                />
+                <img
+                    src="src/img/вопросы3.svg"
+                    alt="Красивая мебель"
+                    width="474" height="309"
+                />
+            </div>
+            <div class="answersQuestions">
+                <details>
+                    <summary class="questions">Как производится оплата заказа?</summary>
+                    <p class="answers">Мы работаем по системе предоплаты. Обычно предоплата составляет 30-50% от общей стоимости заказа, оставшуюся сумму вы оплачиваете при получении мебели.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary class="questions">Какие гарантии Вы предоставляете на мебель?</summary>
+                    <p class="answers">Мы предоставляем гарантию на всю нашу мебель сроком от 12 до 36 месяцев в зависимости от типа изделия и используемых материалов.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary class="questions">Как сделать заказ на изготовление мебели?</summary>
+                    <p class="answers">Для того чтобы заказать мебель на изготовление, вы можете записаться на консультацию с дизайнером, который поможет вам создать уникальный проект. После утверждения всех деталей мы подготовим для вас окончательную смету и начнем производство.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary class="questions">Сколько времени занимает изготовление мебели на заказ?</summary>
+                    <p class="answers">Срок изготовления зависит от сложности проекта, выбранных материалов и загруженности производства. В среднем, процесс занимает от 3 до 8 недель.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary class="questions">Как вы обеспечиваете экологичность и безопасность своей продукции?</summary>
+                    <p class="answers">Мы используем только сертифицированные, безопасные и экологически чистые материалы. Вся древесина проходит строгий контроль и соответствует международным стандартам экологической безопасности.</p>
+                </details>
+            </div>
+        </section> 
+    </main>
 
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">WhatsApp</a></li>
-                <li><a href="#">VK</a></li>
-                <li><a href="#">Telegram</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h3>Главная</h3>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#season">Зима 2025</a></li>
-                <li><a href="#questions">Ваши вопросы</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3>Каталог</h3>
-            <ul>
-                <li><a href="#">Диваны и кресла</a></li>
-                <li><a href="#">Столы и стулья</a></li>
-                <li><a href="#">Лампы и бра</a></li>
-                <li><a href="#">Шкафы и полки</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3>Галерея</h3>
-            <ul>
-                <li><a href="#">Интерьер</a></li>
-                <li><a href="#">Экстерьер</a></li>
-                <li><a href="#">Самостоятельные</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3>Клиенту</h3>
-            <ul>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Пользовательское соглашение</a></li>
-                <li><a href="#">Договор оферты</a></li>
-            </ul>
-        </article>
-        <article>
-            <h3 id="contacts">Контакты</h3>
-            <ul>
-                <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
-                <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
-                <li><a href="mailto:Raffine@gmail.com">Raffine@gmail.com</a></li>
-                <li><a href="#">OOO “Raffiné”</a></li>
-            </ul>
-        </article>
+    <!--Футер-->
+    <footer class="footer">
+        <div class="footerTop">
+            <nav>
+                <img
+                src="src/icons/logoRaffineFooter.svg"
+                alt="Лого"
+                width="162" height="44"
+                />
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="https://whatsapp.com" target="_blank"><img src="/src/icons/whatsApp.svg" width="40px" height="40px"></a></li>
+                    <li><a href="https://vk.com" target="_blank"><img src="/src/icons/vk.svg" width="40px" height="40px"></a></li>
+                    <li><a href="https://t.me" target="_blank"><img src="/src/icons/telegram.svg" width="40px" height="40px"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <article>
+                <h3>Главная</h3>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#season">Зима 2025</a></li>
+                    <li><a href="#questions">Ваши вопросы</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#">Диваны и кресла</a></li>
+                    <li><a href="#">Столы и стулья</a></li>
+                    <li><a href="#">Лампы и бра</a></li>
+                    <li><a href="#">Шкафы и полки</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Галерея</h3>
+                <ul>
+                    <li><a href="#">Интерьер</a></li>
+                    <li><a href="#">Экстерьер</a></li>
+                    <li><a href="#">Самостоятельные</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Клиенту</h3>
+                <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3 id="contacts">Контакты</h3>
+                <ul>
+                    <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
+                    <li><a href="tel:+79990000000">+7(999)000-00-00</a></li>
+                    <li><a href="mailto:Raffine@gmail.com">Raffine@gmail.com</a></li>
+                    <li><a href="#">OOO “Raffiné”</a></li>
+                </ul>
+            </article>
+        </div>
     </footer>
 </body>
 </html>
