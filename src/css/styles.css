@@ -4,6 +4,12 @@
     src: url(/src/fonts/Montserrat-Regular.ttf);
 }
 
+:root {
+    --color-white: #F0F0F0;
+    --color-blue: #22333B;
+    --color-brown: #8C6D51;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +18,7 @@
 }
 
 html body {
-    background-color: #F0F0F0;
+    background-color: var(--color-white);
     font-family: 'Montserrat';
 }
 
@@ -24,17 +30,25 @@ main {
 }
 
 span {
-    color: #8C6D51;
+    color: var(--color-brown);
 }
 
 a {
     text-decoration: none;
-    color: #22333B;
+    color: var(--color-blue);
     font-size: 24px;
 }
 
+a:hover {
+    color: var(--color-brown);
+}
+
+a:active {
+    color: var(--color-brown);
+}
+
 .header {
-    border-bottom: thin solid #22333B;
+    border-bottom: thin solid var(--color-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,28 +67,43 @@ a {
 }
 
 .menuHeaderRigth {
-    border: thin solid #22333B;
+    display: inline-block;
+    transition: all 3s ease;
+}
+
+.contactButton {
+    border: thin solid var(--color-blue);
+    padding: 5px 50px 5px 50px;
     font-size: 24px;
     text-transform: uppercase;
-    padding: 5px 50px 5px 50px;
+}
+
+.contactButton:hover {
+    border: thin solid var(--color-brown);
+    color: var(--color-brown);
+}
+
+.contactButton:active {
+    background-color: var(--color-brown);
+    color: var(--color-white);
 }
 
 p {
     font-size: 24px;
-    color: #22333B;
+    color: var(--color-blue);
 }
 
 h1 {
     font-size: 96px;
     text-transform: uppercase;
-    color: #22333B;
+    color: var(--color-blue);
 }
 
 h2 {
     text-align: center;
     font-size: 96px;
     text-transform: uppercase;
-    color: #22333B;
+    color: var(--color-blue);
     padding-bottom: 50px;
 }
 
@@ -82,46 +111,8 @@ h3 {
     font-size: 24px;
     margin-bottom: 12px;
     text-transform: uppercase;
-    color: #8C6D51;
+    color: var(--color-brown);
 }
-
-/* .mainBlock {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 50px 0px 50px;
-    gap: 20px;
-}
-
-.mainBlockText {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 120px;
-    padding-top: 60px;
-}
-
-.mainBlockImages {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    width: 474px;
-    height: 948px;
-}
-
-.mainBlockImage2 {
-    position: relative;
-    z-index: 1;
-}
-
-.mainBlockImage1 {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 2;
-} */
-
 
 .mainBlock {
     display: flex;
@@ -169,9 +160,8 @@ h3 {
 
 .mainBlockButton {
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all 3s ease;
 }
-
 
 .aboutBlock {
     display: grid;
@@ -273,16 +263,26 @@ h3 {
 }
 
 .katalogButton {
-    border: medium solid #8C6D51;
+    border: medium solid var(--color-brown);
     font-size: 32px;
     text-transform: uppercase;
     padding: 5px 50px 5px 50px;
-    color: #8C6D51;
+    color: var(--color-brown);
+}
+
+.katalogButton:hover {
+    border: medium solid var(--color-blue);
+    color: var(--color-blue);
+}
+
+.katalogButton:active {
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 .nameFurniture {
     font-size: 32px;
-    color: #8C6D51;
+    color: var(--color-brown);
     margin-bottom: 10px;
 }
 
@@ -304,23 +304,23 @@ h3 {
 
 .questions {
     font-size: 24px;
-    color: #22333B;
+    color: var(--color-blue);
 }
 
 .answers {
     font-size: 24px;
-    color: #8C6D51;
+    color: var(--color-brown);
 }
 
 hr {
     height: 1px;
-    background: #22333B;
+    background: var(--color-blue);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .footer {
-    border-top: thin solid #22333B;
+    border-top: thin solid var(--color-blue);
     padding: 20px 50px 50px 50px;
 }
 
@@ -364,4 +364,3 @@ hr {
 .footerBottom ul li {
     margin-bottom: 10px;
 }
-

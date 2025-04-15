@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: Regular;
+    src: url(/src/fonts/Montserrat-Regular.ttf);
+}
+
+:root {
+    --color-white: #F0F0F0;
+    --color-blue: #22333B;
+    --color-brown: #8C6D51;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: var(--color-white);
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-size: 24px;
+}
+
+a:hover {
+    color: var(--color-brown);
+}
+
+a:active {
+    color: var(--color-brown);
+}
+
+.header {
+    border-bottom: thin solid var(--color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 15px 50px;
+}
+
+.menuHeaderCenter ul{
+    display: flex;
+    list-style: none;
+}
+
+.menuHeaderCenter li {
+    margin-right: 50px;
+    font-size: 24px;.menuHeaderCenter li {
+        margin-right: 50px;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    text-transform: uppercase;
+}
+
+.menuHeaderRigth {
+    display: inline-block;
+    transition: all 3s ease;
+}
+
+.contactButton {
+    border: thin solid var(--color-blue);
+    padding: 5px 50px 5px 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.contactButton:hover {
+    border: thin solid var(--color-brown);
+    color: var(--color-brown);
+}
+
+.contactButton:active {
+    background-color: var(--color-brown);
+    color: var(--color-white);
+}
+
+/* внедряю бургер-меню */
+.burgerButton {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .burgerButton span {
+    display: block;
+    height: 4px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+  }
+  
+  .burgerMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+    padding: 60px 20px;
+    transition: right 0.25s ease;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .burgerMenu.active {
+    right: 0;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--color-blue);
+    cursor: pointer;
+    transition: color 0.25s;
+  }
+  
+  .closeButton:hover {
+    color: var(--color-blue);
+  }
+  
+  .burgerMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  
+  .burgerMenu li {
+    margin-bottom: 20px;
+  }
+  
+  .burgerMenu a {
+    color: var(--color-white);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+  
+  .burgerMenu a:hover {
+    color: var(--color-blue);
+}
+
+p {
+    font-size: 24px;
+    color: var(--color-blue);
+}
+
+.text1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 356px;
+}
+
+.blockMain {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+.block404 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.comeBack {
+    border: 2px solid var(--color-blue);
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 5px 170px 5px 170px;
+    text-align: center;
+}
+
+.comeBack:hover {
+    border: 2px solid var(--color-brown);
+    color: var(--color-brown);
+}
+
+.comeBack:active {
+    background-color: var(--color-brown);
+    color: var(--color-white);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: var(--color-brown);
+}
+
+.footer {
+    border-top: thin solid var(--color-blue);
+    padding: 20px 50px 50px 50px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footerTop img {
+    display: block;
+}
+
+.footerTop nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footerTop nav ul li {
+    display: inline;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footerBottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerBottom ul li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    a {font-size: 20px;}
+    p {font-size: 24px;}
+    .header {padding: 10px 30px 10px 30px;}
+    .contactButton {
+        padding: 5px 30px 5px 30px;
+        font-size: 20px;}
+    .menuHeaderCenter li {
+        margin-right: 30px;
+        font-size: 20px;}
+    .text2 {font-size: 256px;}
+    .block404 {width: 600px;}
+    .comeBack {
+        border: 2px solid var(--color-blue);
+        font-size: 24px;
+        padding: 5px 100px 5px 100px;
+    }
+    .errorImage {max-width: 220px; max-height: 320px;}
+    .menuHeaderCenter li {font-size: 20px;}
+    .contactButton {font-size: 20px;}
+}
+
+@media (max-size: 1024px) {
+    a {font-size: 18px;}
+    p {font-size: 20px;}
+    .menuHeaderCenter, .menuHeaderRigth {display: none}
+    .burgerButton {display: flex;}
+    .burgerMenu {display: flex;}
+    .text2 {font-size: 180px;}
+    .block404 {width: 400px;}
+    .comeBack {
+        border: 2px solid var(--color-blue);
+        font-size: 20px;
+        padding: 5px 70px 5px 70px;
+    }
+    .errorImage {max-width: 150px; max-height: 220px;}
+    .contactButton {font-size: 18px;}
+}
