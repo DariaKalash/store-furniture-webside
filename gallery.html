@@ -4,46 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/gallery.css">
+    <script src="src/js/burgerMenu.js"></script>
     <title>Gallery RAFFINÉ</title>
 </head>
 <body>
     <!-- Шапка страницы-->
-    <header class="header">
-        <nav>
-            <a href="index.html"><img
-            src="src/icons/logoRaffine.svg"
-            alt="Лого"
-            width="108" height="39"
-            /></a>
-        </nav>
-        <nav class="menuHeaderCenter">
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="team.html">Команда</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
-        <nav class="menuHeaderRigth">
-            <a class="contactButton" href="tel:+79999999999">Связаться</a>
-        </nav>
+    <header class="header open">
+        <div class="container headerContainer">
+            <button class="burgerButton" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <a class="logo" href="index.html">
+                <img src="src/icons/logoRaffine.svg" alt="Лого" width="108" height="39"/>
+            </a>
+            <nav class="menuHeader">
+                <ul class="menuHeaderList">
+                    <li class="menuHeaderItems"><a class="headerLink" href="#about">О нас</a></li>
+                    <li class="menuHeaderItems"><a class="headerLink" href="catalog.html">Каталог</a></li>
+                    <li class="menuHeaderItems"><a class="headerLink" href="gallery.html">Галерея</a></li>
+                    <li class="menuHeaderItems"><a class="headerLink" href="team.html">Команда</a></li>
+                    <li class="menuHeaderItems"><a class="headerLink" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="galleryPhotos">
-            <img src="src/img/galleryPhoto1.svg">
-            <img src="src/img/galleryPhoto2.svg">
-            <img src="src/img/galleryPhoto3.svg">
-            <img src="src/img/galleryPhoto4.svg">
-            <img src="src/img/galleryPhoto5.svg">
-            <img src="src/img/galleryPhoto6.svg">
-            <img src="src/img/galleryPhoto7.svg">
-            <img src="src/img/galleryPhoto8.svg">
-            <img src="src/img/galleryPhoto9.svg">
-            <img src="src/img/galleryPhoto10.svg">
-            <img src="src/img/galleryPhoto11.svg">
-            <img src="src/img/galleryPhoto12.svg">
+            <img class="galleryPhotoM" src="src/img/galleryPhoto1.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto2.svg">
+            <img class="galleryPhotoM" src="src/img/galleryPhoto3.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto4.svg">
+            <img class="galleryPhotoMax" src="src/img/galleryPhoto5.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto6.svg">
+            <img class="galleryPhotoM" src="src/img/galleryPhoto7.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto8.svg">
+            <img class="galleryPhotoM" src="src/img/galleryPhoto9.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto10.svg">
+            <img class="galleryPhotoMax" src="src/img/galleryPhoto11.svg">
+            <img class="galleryPhoto" src="src/img/galleryPhoto12.svg">
         </section>
         <section class="blockWantSimilar">
             <h1>Понравился экземпляр?</h1>
